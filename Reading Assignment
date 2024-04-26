@@ -1,1 +1,29 @@
+- What are the advantages of Polymorphism?
++ Code Reusability
++ Flexibility
++ Maintainability
++ Extensibility
++ Readability and Understandability
++ Encapsulation
+-> Overall, polymorphism is a powerful tool for designing modular, maintainable, and flexible software systems, making it a cornerstone of modern object-oriented programming paradigms.
 
+- How is Inheritance useful to achieve Polymorphism in Java?
++ Code Reuse
++ Method Overriding
++ Dynamic Binding
+-> In summary, inheritance in Java facilitates code reuse and method overriding, which are essential for achieving polymorphism. By leveraging inheritance and method overriding, you can write more flexible and maintainable code that exhibits polymorphic behavior, allowing objects to be treated in a uniform manner regardless of their specific types.
+
+- What are the differences between Polymorphism and Inheritance in Java?
++ Conceptual Difference:
+` Polymorphism: Polymorphism refers to the ability of objects to take on multiple forms. It allows objects of different classes to be treated as objects of a common superclass. Polymorphism is achieved through method overriding and dynamic binding.
+` Inheritance: Inheritance is a mechanism in Java by which a class can inherit properties (fields and methods) from another class. It facilitates code reuse and the creation of a hierarchy of classes.
++ Purpose:
+` Polymorphism: Polymorphism enables a single interface to represent different underlying forms. It promotes flexibility, code reuse, and extensibility by allowing objects of different types to be treated uniformly.
+` Inheritance: Inheritance is primarily used for creating a hierarchy of classes where subclasses inherit properties from their superclass. It promotes code reuse by allowing subclasses to inherit and extend the functionality of their superclass.
++ Mechanism:
+` Polymorphism: Polymorphism is achieved through method overriding, where a subclass provides a specific implementation of a method that is already defined in its superclass. Dynamic binding ensures that the appropriate method implementation is invoked at runtime.
+` Inheritance: Inheritance is implemented through the 'extends' keyword in Java. Subclasses inherit fields and methods from their superclass, allowing them to reuse code and extend the functionality of the superclass.
++ Flexibility:
+` Polymorphism: Polymorphism promotes flexibility by allowing objects of different types to be treated uniformly through a common interface. It facilitates loose coupling and makes code more adaptable to changes.
+`Inheritance: Inheritance provides a structured way to organize code and promotes code reuse within a class hierarchy. While it offers flexibility in terms of extending and modifying existing functionality, it can also lead to tighter coupling between classes if not used judiciously.
+-> In summary, polymorphism and inheritance are distinct concepts in Java, but they often work together to create flexible, reusable, and maintainable code. Polymorphism allows objects to exhibit different behaviors through a common interface, while inheritance facilitates code reuse and the creation of class hierarchies.
