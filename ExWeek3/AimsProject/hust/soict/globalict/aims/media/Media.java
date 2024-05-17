@@ -10,9 +10,9 @@ public class Media {
     public int id;
     public String title;
     public String category;
-    public float cost;
+    public double cost;
 
-    public Media( String title, String category, float cost) {
+    public Media( String title, String category, double cost) {
         this.title = title;
         this.category = category;
         this.cost = cost;
@@ -44,11 +44,11 @@ public class Media {
         this.category = category;
     }
 
-    public float getCost() {
+    public double getCost() {
         return cost;
     }
 
-    public void setCost(float cost) {
+    public void setCost(double cost) {
         this.cost = cost;
     }
 

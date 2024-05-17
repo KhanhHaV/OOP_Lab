@@ -1,4 +1,5 @@
-package aims.Screen.Manager;
+package aims.screen.manager;
+
 import java.awt.*;
 import javax.swing.*;
 import aims.media.Media;
@@ -6,7 +7,7 @@ import aims.store.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import aims.Screen.Manager.*;;
+import aims.screen.manager.*;;
 
 public class StoreManagerScreen extends JFrame {
     private Store store;
@@ -68,7 +69,7 @@ public class StoreManagerScreen extends JFrame {
         JPanel center = new JPanel();
         center.setLayout(new GridLayout(3,3,2,2));
         ArrayList<Media> mediaInStore = store.getItemsInStore();
-        for(int i = 1 ; i< 9 ; i++)
+        for(int i = 1 ; i< mediaInStore.size() ; i++)
         {
             MediaStore cell = new MediaStore(mediaInStore.get(i)) ;
             center.add(cell) ;

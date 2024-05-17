@@ -10,16 +10,16 @@ public class Book extends Media {
     private int token;
     private List<String> authors;
 
-    public Book(String title, String category, String author, float cost, int token){
+    public Book(String title, String category, String author, double cost, int token){
         super(title,category, cost);
         this.token = token;
         this.authors.add(author);
     }
-    public Book(int id, String title, String category, float cost, int token){
+    public Book(int id, String title, String category, double cost, int token){
         super(title,category, cost);
         this.token = token;
     }
-    public Book(String title, String category, float cost, int token){
+    public Book(String title, String category, double cost, int token){
         super(title,category, cost);
         this.token = token;
 

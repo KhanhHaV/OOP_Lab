@@ -108,7 +108,7 @@ public class Aims {
                     break;
                 case 4:
                     System.out.println("Current Cart:");
-                    cart.orderedItems();
+                    cart.orderedItems();d
                     break;
                 case 0:
                     break;
