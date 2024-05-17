@@ -1,7 +1,7 @@
 package aims.store;
 
 import java.util.ArrayList;
-import java.util.List;
+
 
 import  aims.media.*;
 
@@ -58,7 +58,10 @@ public class Store {
         }
         return null; 
     }
-    public List<Media> getItemsInStore() {
+    public ArrayList<Media> getItemsInStore() {
         return itemsInStore;
+    }
+    public void initData() {
+        System.out.println("Initializing store data...");
     }
 }
