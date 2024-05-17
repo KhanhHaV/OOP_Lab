@@ -11,21 +11,13 @@ public class SwingAccumulator extends JFrame {
         Container cp = getContentPane();
         cp.setLayout(new GridLayout(2, 2));
 
-        cp.add(new JLabel("Enter an integer: "));
+        cp.add(new JLabel("Enter an Integer: "));
 
         tfInput = new JTextField(10);
         cp.add(tfInput);
-        tfInput.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                int number = Integer.parseInt(tfInput.getText());
-                sum += number;
-                tfInput.setText("");
-                tfOutput.setText(sum + "");
-            }
-        });
+        tfInput.addActionListener(new TFInputListener());
 
-        cp.add(new JLabel("Accumulated sum: "));
+        cp.add(new JLabel("The Accumulated Sum is: "));
 
         tfOutput = new JTextField(10);
         tfOutput.setEditable(false);
@@ -35,8 +27,16 @@ public class SwingAccumulator extends JFrame {
         setSize(350, 120);
         setVisible(true);
     }
-
     public static void main(String[] args) {
         new SwingAccumulator();
+    }
+    private class TFInputListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent evt) {
+            int numberIn = Integer.parseInt(tfInput.getText());
+            sum += numberIn;
+            tfInput.setText("");
+            tfOutput.setText(sum + "");
+        }
     }
 }
